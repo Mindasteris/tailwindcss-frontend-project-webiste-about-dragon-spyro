@@ -1,2 +1,5 @@
-# tailwindcss-frontend-project-webiste-about-dragon-spyro
-Custom frontend website about gaming character
+# Tailwindcss - frontend project website about dragon Spyro
+
+Pure HTML, CSS, Tailwindcss.
+
+Custom frontend website about gaming character.
