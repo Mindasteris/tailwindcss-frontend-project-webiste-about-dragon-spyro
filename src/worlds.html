@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/spyro_website_logo.png">
+	<!-- Local Style -->
+    <link rel="stylesheet" href="/css/style.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;1,200&display=swap" rel="stylesheet">
+    <title>SPYRO</title>
+</head>
+<body>
+		<nav class="container min-w-full">
+			<div class="max-w-6xl mx-auto px-4 md:min-w-full">
+				<div class="flex justify-between">
+					<div class="flex md:min-w-full md:justify-between">
+						<div>
+							<!-- Website Logo -->
+							<a href="/src/index.html">
+                                <img class="hover:scale-105" src="/img/spyro_reignited.webp" alt="spyro main logo" width="200">
+							</a>
+						</div>
+						<!-- Primary Navbar items PC -->
+						<div class="hidden md:flex items-center">
+							<ul class="flex space-x-7">
+                                <li><a href="/src/index.html" class="py-4 px-2 text-2xl font-spyro_bold text-white hover:text-black hover:border-b-4 hover:border-black">Home</a></li>
+                                <li><a href="/src/gallery.html" class="py-4 px-2 text-2xl font-spyro_bold text-white hover:text-black hover:border-b-4 hover:border-black">Gallery</a></li>
+								<li><a href="/src/worlds.html" class="py-4 px-2 text-2xl font-spyro_bold text-white hover:text-black hover:border-b-4 hover:border-black">Worlds</a></li>
+                                <li><a href="/src/origin.html" class="py-4 px-2 text-2xl font-spyro_bold text-white hover:text-black hover:border-b-4 hover:border-black">Origin</a></li>
+                                <li><a href="/src/about.html" class="py-4 px-2 text-2xl font-spyro_bold text-white hover:text-black hover:border-b-4 hover:border-black">About</a></li>
+                            </ul>
+						</div>
+                        <!-- Button Subscribe -->
+                        <div class="hidden md:flex items-center">
+                            <a class="text-2xl font-spyro_bold border border-white text-black rounded-full p-2 hover:bg-white hover:scale-110" href="#sub"><button>Subscribe</button></a>
+                        </div>
+					</div>
+					<!-- Mobile menu button -->
+					<div class="md:hidden flex items-center">
+						<button class="outline-none mobile-menu-button">
+						<svg class=" w-8 h-8 text-white hover:text-black"
+							x-show="!showMenu"
+							fill="none"
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+					</button>
+					</div>
+				</div>
+			</div>
+			<!-- Mobile Menu -->
+			<div class="hidden mobile-menu">
+				<ul class="pl-5">
+					<li><a href="/src/index.html" class="block text-lg px-2 py-4 font-spyro_bold  text-white hover:text-black">Home</a></li>
+					<li><a href="/src/gallery.html" class="block text-lg px-2 py-4 font-spyro_bold  text-white hover:text-black">Gallery</a></li>
+					<li><a href="/src/worlds.html" class="block text-lg px-2 py-4 font-spyro_bold  text-white hover:text-black">Worlds</a></li>
+					<li><a href="/src/origin.html" class="block text-lg px-2 py-4 font-spyro_bold  text-white hover:text-black">Origin</a></li>
+					<li><a href="/src/about.html" class="block text-lg px-2 py-4 font-spyro_bold  text-white hover:text-black">About</a></li>
+				</ul>
+			</div>
+			<script>
+				const btn = document.querySelector("button.mobile-menu-button");
+				const menu = document.querySelector(".mobile-menu");
+
+				btn.addEventListener("click", () => {
+					menu.classList.toggle("hidden");
+				});
+			</script>
+		</nav>
+
+    <div class="background-worlds">
+        <!-- Page Content -->
+        <section id="worlds-section-1">
+            <div class="container mx-auto">
+               <h1 class="text-5xl text-black font-spyro_bold text-center pt-10">World of Spyro</h1>
+
+				<div class="container px-5 py-2 mx-auto lg:pt-12 lg:px-32">
+					<div class="flex flex-col md:flex-row md:flex-wrap -m-1 md:-m-2">
+						
+						<!-- Crystal Dragon -->
+						<div class="w-full mt-10">
+							<div class="w-full mx-auto p-1 md:w-1/3 md:p-2">
+							<img alt="gallery" class="block object-cover object-center w-full h-full rounded-lg border border-white"
+								src="/img/Crystal_Dragon.webp">
+							</div>
+						</div>
+					</div>
+	</div>
+        </section>
+		<!-- Section 2 -->
+		<section id="worlds-section-2">
+			<div class="container mx-auto">
+
+				<h1 class="text-5xl text-black font-spyro_bold text-center p-10">Enemies</h1>
+
+				<!-- Enemy -->
+                <div class="flex flex-col md:flex-row md:space-x-48">
+                    <div class="">
+                        <figure>
+                            <img class="w-full p-5 md:p-0 md:w-96 md:mt-9 hover:scale-105" src="/img/gnasty_gnorc.webp" alt="Gnasty Gnorc">
+                            <figcaption class="font-spyro_sub text-5xl text-center mx-auto w-64 md:mt-12 text-black border-b-2 border-t-2 border-black">Gnasty Gnorc</figcaption>
+                        </figure>
+                    </div>
+    
+                    <div class="">
+                        <figure>
+                            <img class="w-full p-5 md:p-0 md:w-96 md:mt-3 hover:scale-105" src="/img/ripto.png" alt="Ripto">
+                            <figcaption class="font-spyro_sub text-5xl text-center mx-auto w-64 md:mt-11 md:ml-20 text-black border-b-2 border-t-2 border-black">Ripto</figcaption>
+                        </figure>
+                    </div>
+    
+                    <div class="">
+                        <figure>
+                            <img class="w-full p-5 md:p-0 md:w-96 hover:scale-105" src="/img/sorceres.png" alt="Sorcerer">
+                            <figcaption class="font-spyro_sub text-5xl text-center mx-auto w-64 text-black border-b-2 border-t-2 border-black">Sorcerer</figcaption>
+                        </figure>
+                    </div>
+                </div>
+			</div>
+            
+            <!-- Logo -->
+            <div class="container mx-auto p-10">
+                <img class="w-52 mx-auto" src="/img/spyro_smile.png" alt="Spyro Smile">
+                <h1 class="text-3xl md:text-5xl font-spyro_bold text-center text-yellow-400">See you for the next adventure</h1>
+            </div>
+		</section>
+    </div>
+
+		<!-- Section 3 -->
+		<section id="worlds-section-3" class="footer-image">
+			<div class="container mx-auto" id="sub">
+				<h1 class="text-3xl md:text-5xl text-white font-spyro_bold text-center pt-44 p-5">Join US!</h1>
+				<input type="email" class="bg-white text-md rounded-md block w-80 mx-auto md:w-1/3 md:mx-auto p-3 focus:bg-yellow-200" placeholder="Enter your E-mail address">
+			</div>
+			<!-- Sub Button -->
+			<button class="bg-none border border-white rounded-full block w-1/2 mx-auto md:w-1/6 md:mx-auto mt-3 p-3 text-white btn-send font-spyro_reg hover:scale-110">Send</button>
+		</section>
+
+   <footer>
+        <div class="flex flex-col justify-between md:flex-row p-10">
+			<div>
+				<a href="/src/index.html"><h1 class="text-2xl font-spyro text-center text-white mb-5 md:mb-0 hover:text-black">RETURNING HOME</h1></a>
+			</div>
+		<hr>
+			<div>
+				<p class="text-2xl font-spyro text-center text-white mt-5 md:mt-0">&copy; All Rights Reserved. &nbsp; Mindaugas
+					<!-- Current Year -->
+					<script>document.write(new Date().getFullYear())</script>
+				</p>
+			</div>
+		</div>
+    </footer>
+</body>
+</html>

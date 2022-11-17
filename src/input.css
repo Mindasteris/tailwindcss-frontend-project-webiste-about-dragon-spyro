@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "spyro";
+    src: url(../fonts/LITHOB.ttf);
+}
+@font-face {
+    font-family: "spyro-regular";
+    src: url(../fonts/lithos_pro/LithosPro-Regular.otf);
+}
+@font-face {
+    font-family: "spyro-bold";
+    src: url(../fonts/lithos_pro/LithosPro-Bold.otf);
+}
+@font-face {
+    font-family: "spyro-sub";
+    src: url(../fonts/CHRONICLE.otf);
+}
+
+nav {
+    background-color: #a328b3;
+    border-bottom: 3px solid black;
+}
+
+footer {
+    background-color: #a328b3;
+    border-top: 3px solid black;
+}
+
+.text-paragraph {
+    font-size: 18px;
+}
+
+/* Mobile Menu */
+
+/* Footer Subscribe */
+.footer-image {
+    min-height: 400px;
+    background: url('/img/footer-bg.png');
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-send:hover {
+    background-color: #a328b3;
+}
+
+/* Home Page */
+.background-home {
+    background: url('/img/BG_gallery.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Origin Page */
+/* .game-cover:hover {
+    color: #a328b3;
+    cursor: pointer;
+} */
+
+/* Worlds Page */
+.background-worlds {
+    background: url('/img/BG_worlds.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* About Page */
+.buy-now:hover {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: ease-in-out .3s;
+}
