@@ -1,4 +1,4 @@
-# Tailwindcss - frontend project website about dragon Spyro
+# Tailwindcss - frontend project website about gaming character dragon Spyro
 
 Pure HTML, CSS, Tailwindcss.
 
